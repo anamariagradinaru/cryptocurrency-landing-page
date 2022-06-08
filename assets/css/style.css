@@ -1,125 +1,156 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.hero {
-  height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  font-size: 62.5%;
-}
-.nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex: 1 1 40rem;
-  padding: 2rem;
-}
-.nav .nav-links {
-  display: flex;
-  flex: 0.5 1;
-  justify-content: space-evenly;
-}
-.nav .nav-buttons {
-  display: flex;
-  flex-grow: 0.03;
-  flex-shrink: 1;
-  justify-content: space-evenly;
+    font-size: 62.5%;
 }
 
 button {
-  background: linear-gradient(225deg, #18c8ff 14.89%, #933ffe 85.85%);
-  border-radius: 10px;
-  width: 100px;
-  height: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  cursor: pointer;
-  color: white;
+    background: linear-gradient(225deg, #18c8ff 14.89%, #933ffe 85.85%);
+    border-radius: 10px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    padding: 0 20px;
 }
 
 a {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
 }
 h1 {
-  font-size: 20px;
-  color: white;
+    font-size: 20px;
+    color: white;
 }
 h2 {
-  font-size: 85px;
-  color: white;
+    font-size: 85px;
+    color: white;
 }
 h3 {
-  font-size: 16px;
+    font-size: 16px;
 }
-main {
-  text-align: center;
-}
-.hero h3 {
-  font-size: 16px;
-  padding: 2.5rem;
-  color: white;
-}
-.hero button {
-  display: inline-block;
-}
+
 body {
-  font-family: "Inter";
-  background-color: black;
+    font-family: 'Inter';
+    background-color: black;
 }
 .button1 {
-  background: none;
+    background: none;
+    border: none;
 }
-.hero {
-  background-image: url("/assets/images/bg-img.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 p {
-  color: white;
+    color: white;
+}
+#hero .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1 1 40rem;
+    padding: 2rem;
+}
+#hero .nav .nav-links {
+    display: flex;
+    flex: 0.5 1;
+    justify-content: space-evenly;
+}
+#hero .nav .nav-buttons {
+    display: flex;
+    flex-grow: 0.03;
+    flex-shrink: 1;
+    justify-content: space-evenly;
+}
+#hero {
+    position: relative;
+    width: 100vw;
+}
+#hero .hero-img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+#hero h3 {
+    font-size: 16px;
+    padding: 2.5rem;
+    color: white;
+}
+#hero .hero-header {
+    display: grid;
+    place-items: center;
 }
 
-.cards {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  min-height: 70vh;
-  align-items: center;
-  flex-wrap: wrap;
+#block2 {
+    position: relative;
+    padding: 3rem;
+    height: 546px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
 }
-.card {
-  text-align: center;
-  flex: 1 1 25rem;
-  min-height: 40vh;
-  margin: 2rem 5rem;
-  box-shadow: 0 10px 10px rgb(0, 0, 0, 0.1);
+#block2 .button-block2 {
+    background: none;
+    border: none;
+    color: #b982ff;
 }
-
-.cards img {
-  max-width: 15%;
-  margin: 2rem;
+#block2 .cards {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
 }
-.card h4,
-.card p {
-  padding: 1rem;
-  line-height: 1.8;
+#block2 .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 380px;
+    height: 346px;
+    background-color: #1a1b23;
+    border-radius: 25px;
 }
-
-.block2 {
-  background-image: url("/assets/images/info-background.png");
-  padding: 3rem;
-  min-height: 30vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
+.card h1,
+p {
+    margin: 16px 16px;
+}
+.cards p {
+    color: #898ca9;
+}
+#block2 .block2-img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+#block3 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#block3 .block3-img {
+    position: absolute;
+    z-index: -1;
+    right: 0%;
+}
+#block3 h1 {
+    font-size: 50px;
+    margin: 20px;
+}
+#block3 p {
+    font-size: 16px;
+    color: #898ca9;
+    margin: 20px;
 }
