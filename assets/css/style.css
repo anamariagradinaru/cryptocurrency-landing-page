@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --gray-color: #898ca9;
+    --p-md: 16px;
+    --p-sm: 14px;
+    --h-md: 50px;
+}
 
 html {
     font-size: 62.5%;
@@ -11,7 +17,7 @@ html {
 button {
     background: linear-gradient(225deg, #18c8ff 14.89%, #933ffe 85.85%);
     border-radius: 10px;
-    height: 45px;
+    height: 56px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,12 +26,11 @@ button {
     color: white;
     border: none;
     padding: 0 20px;
+    font-size: var(--p-md);
 }
 
 a {
     text-decoration: none;
-    color: white;
-    font-size: 20px;
 }
 h1 {
     font-size: 20px;
@@ -35,32 +40,37 @@ h2 {
     font-size: 85px;
     color: white;
 }
-h3 {
-    font-size: 16px;
-}
 
 body {
     font-family: 'Inter';
     background-color: black;
+    width: 100%;
 }
 .button1 {
     background: none;
-    border: none;
+    border: 1px solid #fff;
 }
 p {
     color: white;
 }
+
 #hero .nav {
     display: flex;
+    align-items: center;
     flex-direction: row;
     justify-content: space-around;
-    flex: 1 1 40rem;
-    padding: 2rem;
+    height: 80px;
+    width: 100%;
 }
 #hero .nav .nav-links {
     display: flex;
     flex: 0.5 1;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 32px;
+}
+#hero .nav .nav-links a {
+    color: #fff;
+    font-size: 14px;
 }
 #hero .nav .nav-buttons {
     display: flex;
@@ -68,30 +78,42 @@ p {
     flex-shrink: 1;
     justify-content: space-evenly;
 }
+#hero .nav .nav-buttons button {
+    height: 40px;
+}
 #hero {
     position: relative;
-    width: 100vw;
+    width: 100%;
+    height: 100vh;
 }
 #hero .hero-img {
     position: absolute;
     z-index: -1;
     width: 100%;
+    object-fit: cover;
+    object-position: top;
 }
-#hero h3 {
+#hero .hero-header h3 {
     font-size: 16px;
-    padding: 2.5rem;
-    color: white;
+    color: var(--gray-color);
+    text-align: center;
+    margin-top: 16px;
 }
 #hero .hero-header {
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100% - 170px);
 }
-
+#hero .hero-header button {
+    margin-top: 32px;
+}
 #block2 {
     position: relative;
-    padding: 3rem;
     height: 546px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,10 +121,14 @@ p {
     color: white;
     text-align: center;
 }
+#block2 .card p {
+    margin-top: 16px;
+}
 #block2 .button-block2 {
     background: none;
     border: none;
     color: #b982ff;
+    margin-top: 32px;
 }
 #block2 .cards {
     display: flex;
@@ -114,27 +140,35 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 380px;
     height: 346px;
     background-color: #1a1b23;
     border-radius: 25px;
 }
-.card h1,
-p {
-    margin: 16px 16px;
+#block2 .card h1 {
+    font-size: 32px;
+    margin-top: 16px;
+    font-weight: 800;
 }
-.cards p {
+
+#block2 .cards p {
     color: #898ca9;
+    line-height: 24px;
+    font-weight: 400;
+    font-size: var(--p-md);
+    margin-top: 16px;
 }
 #block2 .block2-img {
     position: absolute;
     z-index: -1;
     width: 100%;
+    object-fit: cover;
 }
 #block3 {
     position: relative;
     width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -144,10 +178,12 @@ p {
     position: absolute;
     z-index: -1;
     right: 0%;
+    object-fit: cover;
 }
 #block3 h1 {
     font-size: 50px;
     margin: 20px;
+    text-align: center;
 }
 #block3 p {
     font-size: 16px;
