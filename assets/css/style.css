@@ -404,3 +404,125 @@ p {
     right: 0%;
     top: -53%;
 }
+#block7 {
+    position: relative;
+    height: 393px;
+    width: 100%;
+}
+#block7 h1 {
+    font-size: var(--h-md);
+}
+#block7 p {
+    font-size: var(--p-md);
+    color: var(--gray-color);
+    margin-top: 16px;
+}
+/* .input-container { 
+     box-sizing: border-box;
+    margin-top: 32px;
+    height: 56px;
+    width: 304px;
+    border-width: 4px;
+    background-image: linear-gradient(var(--gray-color), var(--gray-color))
+        linear-gradient(to right, #18c8ff, #933ffe);
+    border: 4px solid transparent;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 10px;
+    color: var(--gray-color);
+    background: none; 
+}*/
+#block7 .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#block7 img {
+    position: absolute;
+    z-index: -1;
+    top: -30%;
+}
+#block7 input {
+    margin-top: 45px;
+}
+footer {
+    position: relative;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    height: 507px;
+    width: 100%;
+    place-items: center;
+    border-top: 2px solid var(--black-color);
+}
+footer .img-footer {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+}
+
+footer .footer1 p {
+    font-size: var(--p-sm);
+    color: var(--gray-color);
+    line-height: 21px;
+    opacity: 30%;
+    line-height: 21px;
+}
+.footer1 h3 {
+    font-size: 12px;
+    opacity: 30%;
+    color: var(--gray-color);
+    margin-top: 41px;
+}
+footer .footer1 .input-email {
+    height: 56px;
+    width: 304;
+    background: none;
+    opacity: 30%;
+    margin-top: 50px;
+}
+footer .footer2 ul {
+    color: var(--gray-color);
+    font-size: var(--p-sm);
+    list-style: none;
+    line-height: 24px;
+    opacity: 30%;
+}
+
+footer .footer3 ul {
+    color: var(--gray-color);
+    font-size: var(--p-sm);
+    list-style: none;
+    line-height: 24px;
+    opacity: 30%;
+    line-height: 49px;
+}
+footer .footer2 ul li {
+    line-height: 49px;
+}
+
+input {
+    padding: 0.5rem;
+    border: double 3px transparent;
+    border-radius: 6px;
+    background-image: linear-gradient(black, black),
+        linear-gradient(to right, #18c8ff, #933ffe);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+footer .imgfooter {
+    position: absolute;
+    top: 80px;
+    left: 65px;
+}
+input {
+    margin-top: 20px;
+    height: 50px;
+    width: 250px;
+}
+footer .footer1 h1 {
+    color: var(--gray-color);
+    opacity: 30%;
+    font-size: 12px;
+    margin-top: 20px;
+}
